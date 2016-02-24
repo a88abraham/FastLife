@@ -1,0 +1,55 @@
+//
+//  FLPrefixHeader.pch
+//  FastLife
+//
+//  Created by 99 on 15/12/25.
+//  Copyright (c) 2015年 enfaHe. All rights reserved.
+//
+
+#ifndef FastLife_FLPrefixHeader_pch
+#define FastLife_FLPrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+
+/*
+ ****************************** 第三方库头文件 ************************
+ */
+#import <AFNetworking.h>
+#import <MJRefresh.h>
+#import <MBProgressHUD.h>
+#import <SVProgressHUD.h>
+
+/*
+ ****************************** 类扩展头文件 **********************
+ */
+#import "UIImage+HEF.h"
+
+/*
+ ****************************** 宽高定义 **********************
+ */
+
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
+#define StatusBarHeight (IOS7==YES ? 0 : 20)
+#define BackHeight      (IOS7==YES ? 0 : 15)
+
+#define fNavBarHeigth (IOS7==YES ? 64 : 44)
+
+#define fDeviceWidth ([UIScreen mainScreen].bounds.size.width)
+#define fDeviceHeight ([UIScreen mainScreen].bounds.size.height-StatusBarHeight)
+
+#define leftRowWidth 90
+#define leftRowHeight 40
+#define rightRowHeight 50
+
+#define TAB_Color(r,g,b,a) [UIColor colorWithRed:r green:g blue:b alpha:a]
+/*
+ ****************************** 接口API **********************
+ */
+#define APPKEY @"8a7a591413384fc283b558efbb9d2e60"
+/**商家列表接口*/
+#define companyPlist @"http://apis.haoservice.com/lifeservice/Huangye/GetShopList"
+
+
+#endif

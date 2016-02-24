@@ -1,0 +1,6 @@
+platform :ios, '8.0'
+pod 'AFNetworking','~>2.5.4'
+pod 'MJRefresh','~>2.5.0'
+pod 'SVProgressHUD'
+pod 'MBProgressHUD'
+pod 'MJExtension'
